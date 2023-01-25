@@ -8,6 +8,7 @@ TechStack :
 - Coroutine
 - Glide
 - ViewBinding
+- Programming Language : Kotlin
 
 API : https://api.themoviedb.org/  
 
