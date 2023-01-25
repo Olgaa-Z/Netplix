@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Netplix</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="api">AIzaSyCXb8KXyVk3f69IZbHIFBamIOl0YC_Mk6U</string>
+    <string name="marvels_avengers_all">Marvels : Avengers All</string>
+</resources>

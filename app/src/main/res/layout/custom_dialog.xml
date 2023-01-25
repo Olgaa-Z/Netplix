@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        android:backgroundTint="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/btnClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_close" />
+
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:layout_below="@+id/btnClose"
+                android:id="@+id/embedVideo"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"/>
+            <RelativeLayout
+                android:id="@+id/areaTitle"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/embedVideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/titleMovie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_toLeftOf="@+id/btnAddMyList"
+                    android:text="@string/marvels_avengers_all"
+                    android:textStyle="bold"
+                    android:textColor="@color/white" />
+                <ImageView
+                    android:id="@+id/btnShare"
+                    android:src="@drawable/ic_share"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/btnAddMyList"
+                    android:src="@drawable/ic_addmylist"
+                    android:layout_toLeftOf="@+id/btnShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_margin="5dp"
+                android:layout_below="@+id/areaTitle"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                android:id="@+id/overviewMovie"
+                android:text="nsagfhagfhsa jsfjafhjahsfjashf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_below="@+id/overviewMovie"
+                android:id="@+id/areaInformation"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/icGenre"
+                        android:src="@drawable/ic_genre"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/genreMovie"
+                        android:textColor="@color/white"
+                        android:text="Comedy"
+                        android:layout_toRightOf="@+id/icGenre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/icStar"
+                        android:src="@drawable/ic_star"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/starMovie"
+                        android:textColor="@color/white"
+                        android:text="8/10"
+                        android:layout_toRightOf="@+id/icStar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/icClock"
+                        android:src="@drawable/ic_clock"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/durationMovie"
+                        android:textColor="@color/white"
+                        android:text="112 minutes"
+                        android:layout_toRightOf="@+id/icClock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/icEye"
+                        android:src="@drawable/ic_eye"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/popularityMovie"
+                        android:textColor="@color/white"
+                        android:text="2346 x watch"
+                        android:layout_toRightOf="@+id/icEye"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
